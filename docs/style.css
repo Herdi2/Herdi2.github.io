@@ -1,1 +1,15 @@
-{background :#1a1a1a}
+
+body
+{
+  background  : #1a1a1a;
+  color       : #ffffff;
+  display     : flex;
+  line-height : 1.4;
+  max-width   : 600px;
+  margin      : 30px auto 30px auto;
+  font-family : "EB Garamond","Garamond", serif;
+  font-size   : 17px;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */
