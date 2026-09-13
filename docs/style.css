@@ -11,5 +11,19 @@ body
   font-size   : 17px;
 }
 
+.projects-grid
+{
+  display  : grid;
+  grid-gap : 16px;
+}
+
+.project-card
+{
+  display         : block;
+  text-decoration : none;
+  border          : 1px solid #ffffff;
+  padding         : 2px 2px 2px 2px;
+}
+
 
 /* Generated with Clay, http://fvisser.nl/clay */

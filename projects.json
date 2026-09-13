@@ -1,0 +1,14 @@
+[
+  {
+    "title": "My personal website",
+    "description": "My personal website, where I write things and show off my projects!",
+    "tags": ["haskell", "blaze-html", "hakyll", "clay"],
+    "url": "https://github.com/Herdi2/my-site"
+  },
+  {
+    "title": "My personal website",
+    "description": "My personal website, where I write things and show off my projects!",
+    "tags": ["haskell", "blaze-html", "hakyll", "clay"],
+    "url": "https://github.com/Herdi2/my-site"
+  }
+]
