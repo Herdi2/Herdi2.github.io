@@ -15,7 +15,7 @@ main :: IO ()
 main =
   do
     hakyllWith defaultConfiguration {destinationDirectory = "docs"} $ do
-      match "style.hs" $ do
+      match "Style.hs" $ do
         route $ setExtension "css"
         compile $ getResourceString >>= withItemBody (unixFilter "runghc" [])
 
@@ -67,10 +67,13 @@ parseProjects =
           pure $ projectsGrid p
 
 projectCard :: Project -> H.Html
-projectCard p =
-  H.a ! HA.class_ "project-card" ! HA.href (H.toValue (pUrl p)) $ do
-    H.h3 $ htxt (pTitle p)
-    H.p $ htxt (pDescription p)
+projectCard project =
+  H.a ! HA.class_ "project-card" ! HA.href (H.toValue (pUrl project)) $ do
+    H.h3 $ htxt (pTitle project)
+    H.p $ htxt (pDescription project)
+    H.div ! HA.class_ "project-tags" $
+      mconcat $
+        ((H.span ! HA.class_ "project-card-tag") . htxt) <$> pTags project
 
 projectsGrid :: [Project] -> H.Html
 projectsGrid ps = H.div ! HA.class_ "projects-grid" $ mconcat (map projectCard ps)
@@ -133,7 +136,7 @@ stylesheet =
   H.link
     ! (HA.rel "stylesheet")
     ! (HA.type_ "text/css")
-    ! (HA.href "/style.css")
+    ! (HA.href "/Style.css")
 
 mkLink :: H.AttributeValue -> String -> H.Html
 mkLink url linkName = H.a ! HA.href url $ (htxt linkName)

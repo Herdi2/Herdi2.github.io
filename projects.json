@@ -6,9 +6,9 @@
     "url": "https://github.com/Herdi2/my-site"
   },
   {
-    "title": "My personal website",
-    "description": "My personal website, where I write things and show off my projects!",
-    "tags": ["haskell", "blaze-html", "hakyll", "clay"],
-    "url": "https://github.com/Herdi2/my-site"
+    "title": "C2TranslationValidation",
+    "description": "Translation validation tool for the C2 JVM JIT compiler, which was a major part of my Master's thesis.",
+    "tags": ["haskell", "Z3", "SBV", "Java", "JVM"],
+    "url": "https://github.com/Herdi2/C2TranslationValidation"
   }
 ]

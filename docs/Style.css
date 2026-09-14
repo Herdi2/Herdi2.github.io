@@ -1,0 +1,67 @@
+
+body
+{
+  background  : #1a1a1a;
+  color       : #ffffff;
+  display     : flex;
+  line-height : 1.4;
+  max-width   : 600px;
+  margin      : 30px auto 30px auto;
+  font-family : "EB Garamond","Garamond", serif;
+  font-size   : 17px;
+}
+
+.projects-grid
+{
+  display  : grid;
+  grid-gap : 16px;
+}
+
+.project-card
+{
+  display            : block;
+  text-decoration    : none;
+  color              : inherit;
+  border             : 1px solid #ffffff;
+  border-radius      : 30px 30px 30px 30px;
+  padding-top        : 2px;
+  padding-bottom     : 2px;
+  padding-left       : 8px;
+  padding-right      : 8px;
+  -webkit-transition : all 0.1s ease 0.0s;
+  -moz-transition    : all 0.1s ease 0.0s;
+  -ms-transition     : all 0.1s ease 0.0s;
+  -o-transition      : all 0.1s ease 0.0s;
+  transition         : all 0.1s ease 0.0s;
+}
+
+.project-card:hover
+{
+  background        : #2a2a2a;
+  border-color      : #888888;
+  -webkit-transform : translateY(-2px);
+  -moz-transform    : translateY(-2px);
+  -ms-transform     : translateY(-2px);
+  -o-transform      : translateY(-2px);
+  transform         : translateY(-2px);
+}
+
+.project-tags
+{
+  padding-bottom : 8px;
+  padding-left   : 8px;
+}
+
+.project-card-tag
+{
+  display       : inline-block;
+  color         : inherit;
+  border-radius : 30px 30px 30px 30px;
+  padding       : 2px 8px 2px 8px;
+  border        : 1px solid #888888;
+  font-size     : 13px;
+  white-space   : nowrap;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */
