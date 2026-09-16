@@ -3,100 +3,87 @@
 <html>
     <head>
         <title>
-            Herdi's Home
+            about
         </title>
+        <link rel="icon" type="image/svg+xml" sizes="512x512" href="./images/favicon.svg">
         <link rel="stylesheet" type="text/css" href="./Style.css">
     </head>
     <body>
-        <main>
-            <h1>
-                Herdi Saleh
-            </h1>
-            <p>
-                <a target="_blank" href="https://github.com/Herdi2">
-                    <img src="./images/github.svg" width="24" height="24">
-                </a>
-                <a target="_blank" href="https://linkedin.com/in/herdi-saleh">
-                    <img src="./images/linkedin.svg" width="24" height="24">
-                </a>
-            </p>
-            <p>
-                Hello, I'm Herdi! This is my site, powered by Haskell (woaw).
-                You may find my CV
-                <a href="./pdfs/Herdi-Saleh-CV.pdf">
-                    here
-                </a>
-                .
-            </p>
+        <nav class="sidebar">
             <h3>
-                Projects
-            </h3>
-            <div class="projects-grid">
-                <a class="project-card" href="https://github.com/Herdi2/my-site">
-                    <h3>
-                        My personal website
-                    </h3>
-                    <p>
-                        My personal website, where I write things and show off my projects!
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-card-tag">
-                            haskell
-                        </span>
-                        <span class="project-card-tag">
-                            blaze-html
-                        </span>
-                        <span class="project-card-tag">
-                            hakyll
-                        </span>
-                        <span class="project-card-tag">
-                            clay
-                        </span>
-                    </div>
-                </a>
-                <a class="project-card" href="https://github.com/Herdi2/C2TranslationValidation">
-                    <h3>
-                        C2TranslationValidation
-                    </h3>
-                    <p>
-                        Translation validation tool for the C2 JVM JIT compiler, which was a major part of my Master's thesis.
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-card-tag">
-                            haskell
-                        </span>
-                        <span class="project-card-tag">
-                            Z3
-                        </span>
-                        <span class="project-card-tag">
-                            SBV
-                        </span>
-                        <span class="project-card-tag">
-                            Java
-                        </span>
-                        <span class="project-card-tag">
-                            JVM
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <h3>
-                Posts
+                <b>
+                    Herdi
+                </b>
             </h3>
             <ul>
                 <li>
-                    <a href="./posts/2015-11-28-carpe-diem.html">
-                        Carpe Diem
+                    <a href="./">
+                        about
                     </a>
-                     - 2026-09-13
                 </li>
                 <li>
-                    <a href="./posts/2015-12-07-tu-quoque.html">
-                        Tu Quoque
+                    <a href="./projects.html">
+                        projects
                     </a>
-                     - n.d.
+                </li>
+                <li>
+                    <a href="./posts.html">
+                        posts
+                    </a>
                 </li>
             </ul>
+        </nav>
+        <article>
+            <h1>
+                about
+            </h1>
+            <div class="button-grid">
+                <div>
+                    <img src="./images/github.svg" width="24" height="24">
+                    <a href="https://github.com/Herdi2">
+                        GitHub
+                    </a>
+                </div>
+                <div>
+                    <img src="./images/linkedin.svg" width="24" height="24">
+                    <a href="https://linkedin.com/in/herdi-saleh">
+                        LinkedIn
+                    </a>
+                </div>
+                <div>
+                    <img src="./images/cv.svg" width="24" height="24">
+                    <a href="./pdfs/Herdi-Saleh-CV.pdf">
+                        CV
+                    </a>
+                </div>
+            </div>
+            <div>
+                <p>
+                    Hello! I'm Herdi. This is my little site, where I show off my projects and (hopefully) write a bit.
+                    I am a former student at 
+                    <a href="https://www.kth.se/">
+                        KTH
+                    </a>
+                     where I recently obtained a Master's degree in Computer Science.
+                    My thesis was in compiler verification using translation validation, applied to the C2 JVM JIT compiler.
+                    Before that I'd interned at Ericsson, working on a fuzzer for their in-house compiler.
+                </p>
+                <p>
+                    Although my interests span most of what CS has to offer, I've fallen into functional programming!
+                    In fact, 
+                    <a href="https://github.com/Herdi2/my-site">
+                        this site
+                    </a>
+                     is fully generated using Haskell.
+                    I also wrote my thesis tool, 
+                    <a href="https://github.com/Herdi2/C2TranslationValidation">
+                        C2tv
+                    </a>
+                    , in Haskell.
+                    Even Ericsson had me working on a fuzzer written in Haskell!
+                    It seems the monads are after me...
+                </p>
+            </div>
             <figure>
                 <img src="./images/Haskell_House.jpg" width="600" height="418">
                 <figcaption>
@@ -106,6 +93,6 @@
                     by Edward Hopper
                 </figcaption>
             </figure>
-        </main>
+        </article>
     </body>
 </html>
