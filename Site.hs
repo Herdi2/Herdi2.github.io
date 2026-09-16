@@ -164,10 +164,10 @@ projectpage projects = H.docTypeHtml $ do
   header "Projects"
   H.body $ do
     navbar
-    H.article $ H.div ! HA.class_ "projects-grid" $ mconcat (map projectitem projects)
+    H.article $ H.div ! HA.class_ "projects-grid" $ mconcat (map mkProject projects)
 
-projectitem :: Project -> H.Html
-projectitem project = do
+mkProject :: Project -> H.Html
+mkProject project = do
   H.div $ do
     H.h3 $ mkLink (pUrl project) (pTitle project)
     H.p $ htxt (pDescription project)

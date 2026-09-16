@@ -34,8 +34,10 @@ css =
       width navbarSize
       background navbarcolor
       position absolute
+      padding (rem 1) (rem 1) (rem 1) (rem 1)
       top (px 0)
       bottom (px 0)
+      left (px 0)
       "ul" ? do
         paddingLeft (vw 0)
         listStyle none outside none

@@ -10,5 +10,12 @@
     "description": "Translation validation tool for the C2 JVM JIT compiler, which was a major part of my Master's thesis.",
     "tags": ["haskell", "Z3", "SBV", "Java", "JVM"],
     "url": "https://github.com/Herdi2/C2TranslationValidation"
+  },
+  {
+    "title": "OutRun--",
+    "description": "An implementation of the classic Sega game \"Out Run\" on a Uno32 w/ Basic I/O shield. Done as a part of the IS1500 KTH course with Azeez (he's awesome).",
+    "tags": ["C", "embedded", "asm"],
+    "url": "https://github.com/AzeezDa/is1500-projekt"
   }
+
 ]

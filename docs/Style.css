@@ -23,8 +23,10 @@ a:hover
   width      : 10vw;
   background : #101010;
   position   : absolute;
+  padding    : 1rem 1rem 1rem 1rem;
   top        : 0px;
   bottom     : 0px;
+  left       : 0px;
 }
 
 .sidebar ul
